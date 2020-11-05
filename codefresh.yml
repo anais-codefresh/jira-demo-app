@@ -36,4 +36,4 @@ steps:
       JIRA_API_KEY: '${{JIRA_API_KEY}}'
       JIRA_ISSUE_SOURCE_FIELD: '${{JIRA_ISSUE_SOURCE_FIELD}}'
       ACTION: "comment_create"
-      COMMENT_BODY: "Build number ${{CF_BUILD_URL}} finished in Codefresh"
+      COMMENT_BODY: "The build was successful, here is the URL ${{CF_BUILD_URL}}"
