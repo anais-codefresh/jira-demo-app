@@ -31,9 +31,9 @@ steps:
     type: "codefreshdemo/jira-issue-manager"
     stage: "deploy"
     arguments:
-    JIRA_BASE_URL: '${{JIRA_BASE_URL}}'
-    JIRA_USERNAME: '${{JIRA_USERNAME}}'
-    JIRA_API_KEY: '${{JIRA_API_KEY}}'
-    JIRA_ISSUE_SOURCE_FIELD: '${{JIRA_ISSUE_SOURCE_FIELD}}'
-    ACTION: "comment_create"
-    COMMENT_BODY: "Build number ${{CF_BUILD_ID}} finished in Codefresh"
+      JIRA_BASE_URL: '${{JIRA_BASE_URL}}'
+      JIRA_USERNAME: '${{JIRA_USERNAME}}'
+      JIRA_API_KEY: '${{JIRA_API_KEY}}'
+      JIRA_ISSUE_SOURCE_FIELD: '${{JIRA_ISSUE_SOURCE_FIELD}}'
+      ACTION: "comment_create"
+      COMMENT_BODY: "Build number ${{CF_BUILD_ID}} finished in Codefresh"
